@@ -1,0 +1,15 @@
+.data
+	n:	.word 12
+	n1: .word 108
+.text
+main:
+	lw $v0, n
+	addi $t0, $zero, 18
+	addi $t1, $zero, 90
+	add $v1, $v0, $t0
+	mul $t2, $v0, $t1
+
+	#comment
+
+	sw $t2, n1 
+	

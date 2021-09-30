@@ -1,0 +1,12 @@
+main:
+	addi $t1, $zero, 7
+	addi $t2, $zero, 8
+	add $t0, $t1, $t2
+	sub $t3, $t2, $t1
+
+	mul $t4, $t1, $t2
+	slt $t5, $t3, $t1
+
+	#comment
+
+	

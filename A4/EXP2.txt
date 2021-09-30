@@ -1,0 +1,16 @@
+position: 0
+lw $t0, 1000
+cycle 1:DRAM request issued
+
+
+position: 1
+addi $t0, $t1, 1
+clock cycle: 8
+
+position: 2
+addi $t1, $t1, 10
+clock cycle: 9
+
+Final Clock : 9
+
+Memory Content:

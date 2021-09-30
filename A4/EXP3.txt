@@ -1,0 +1,38 @@
+position: 0
+main:
+
+
+position: 1
+lw $t1, 1000
+cycle 1:DRAM request issued
+
+
+position: 2
+addi $t0, $t0, 1
+clock cycle: 14
+
+position: 3
+addi $t0, $t0, 3
+clock cycle: 15
+
+position: 4
+sw $t0, 2048
+cycle 16:DRAM request issued
+
+
+position: 5
+addi $t0, $t1, 1
+clock cycle: 39
+
+position: 6
+addi $t0, $t2, 3
+clock cycle: 40
+
+position: 7
+exit:
+
+
+Final Clock : 40
+
+Memory Content:
+2048-2051 : 4

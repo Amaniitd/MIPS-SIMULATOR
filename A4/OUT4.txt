@@ -1,0 +1,44 @@
+ROW ACCESS DELAY = 10
+COL ACCESS DELAY = 2
+
+position: 0
+main:
+
+
+position: 1
+addi $t0, $zero, 19
+clock cycle: 1
+
+position: 2
+addi $t1, $zero, 19
+clock cycle: 2
+
+position: 3
+sw $t1, 400
+cycle 3:DRAM request issued
+
+
+position: 4
+lw  $t7, 400
+cycle 16:DRAM request issued
+
+
+position: 5
+sw $t1, 1000
+cycle 19:DRAM request issued
+
+
+position: 6
+lw  $t6, 1008
+cycle 22:DRAM request issued
+
+
+position: 7
+addi $t8, $zero, 56
+clock cycle: 25
+
+Final Clock : 25
+
+Memory Content:
+400-403 : 19
+1000-1003 : 19

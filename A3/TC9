@@ -1,0 +1,6 @@
+.data
+	n:	.word	90 
+.text
+main:
+	lw $v0, n
+	addi $k0, $v0, 78

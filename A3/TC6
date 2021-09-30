@@ -1,0 +1,9 @@
+main:
+	addi $t0, $zero, 19
+	addi $t1, $zero, 19
+	beq  $t0, $t1, label
+
+	addi $t8, $zero, 56
+	label:
+		addi $t9, $zero, 14
+		

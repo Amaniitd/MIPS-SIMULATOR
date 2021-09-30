@@ -1,0 +1,9 @@
+main:
+	addi $t0, $zero, 19
+	addi $t1, $zero, 19
+    sw $t1, 400
+    lw  $t7, 400
+    sw $t1, 1000
+    lw  $t6, 1008
+
+	addi $t8, $zero, 56

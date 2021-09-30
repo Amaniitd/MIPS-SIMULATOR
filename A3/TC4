@@ -1,0 +1,3 @@
+main:
+	lw $v0, n
+	addi $t2, $zero, 67

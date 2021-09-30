@@ -1,0 +1,13 @@
+main:
+	addi $a0, $zero, 15
+	addi $a1, $zero, 17
+
+	#comment
+
+	j jump
+
+	addi $t9, $zero, 89
+
+	jump:
+		addi $t8, $zero, 64
+		addi $v1, $zero, 98
